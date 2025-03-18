@@ -1,0 +1,37 @@
+training_iterations: 100000
+policy: "MlpPolicy"
+learning_rate: 1e-4
+batch_size: 32
+gamma: 0.99
+clip_range: 0.3
+training_data: "hf://datasets/Berwyn19/PatternZero/final_data.csv"
+  
+test_data:
+  - target: 14
+    sequence: [2, 4, 6, 8, 10, 12]
+  - target: 32
+    sequence: [1, 2, 2, 4, 8, 16]
+  - target: 50
+    sequence: [2, 5, 7, 12, 19, 31]
+  - target: 5
+    sequence: [5, 0, 5, 0, 5, 0]
+  - target: 7
+    sequence: [1, 2, 3, 4, 5, 6]
+  - target: 21
+    sequence: [3, 6, 9, 12, 15, 18]
+  - target: 16
+    sequence: [4, 6, 8, 10, 12, 14]
+  # - target: 8
+  #   sequence: [27, 10, 18, 15, 12, 22.5]
+  # - target: 204
+  #   sequence: [1, 2.5, 6, 14.5, 35, 84.5]
+  # - target: 8192
+  #   sequence: [1, 2, 2, 4, 16, 128]
+  # - target: 15
+  #   sequence: [3, 2, 7, -2, 11, -6]
+  # - target: 42
+  #   sequence: [21, 20, 22, 18, 26, 10]
+  # - target: 30
+  #   sequence: [11, 10, 12, 36, 9, 8, 10]
+  # - target: 79
+  #   sequence: [-12, -11, -7, 2, 18, 43]
